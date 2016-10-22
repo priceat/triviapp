@@ -1,1 +1,9 @@
-<h1>Welcome to my Awesome Web App</h1>
+<% @questions.each do |question| %>
+  <div>
+    <h1><%= question.category %></h1><br />
+    <i><%= question.question %></i><br />
+    <p><%= question.answer %></p><br />
+  </div>
+
+  <hr />
+<% end %>
