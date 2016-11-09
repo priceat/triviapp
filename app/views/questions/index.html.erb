@@ -1,9 +1,7 @@
 <% @questions.each do |question| %>
-  <div>
+ <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= question.category %></h1><br />
     <i><%= question.question %></i><br />
     <p><%= question.answer %></p><br />
   </div>
-
-  <hr />
 <% end %>
