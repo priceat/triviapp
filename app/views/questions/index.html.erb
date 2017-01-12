@@ -1,7 +1,8 @@
-<% @questions.each do |question| %>
+<% @questions.each do |q| %>
  <div class="booyah-box col-xs-10 col-xs-offset-1">
-    <h1><%= question.category %></h1><br />
-    <i><%= question.question %></i><br />
-    <p><%= question.answer %></p><br />
-  </div>
+    <h4><%= q.category %></h4>
+    <br>
+    <h4><%= link_to q.question, question_path(q.id) %></h4>
+    <br>
+ </div>
 <% end %>

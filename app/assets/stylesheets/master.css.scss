@@ -1,6 +1,72 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$navbarfont: 'chunkfiveroman';
+
+.navbar {
+  border-radius:0;
+  font-family: $navbarfont;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background:url('carbon_fibre_v2.png');
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: $navbarfont;
+  font-weight: 75;
+  color:#FF6600;
+}
+
+nav.navbar.navbar-inverse {
+  margin-bottom:0;
+}
+
+.hero {
+  background: url('skyline.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:600px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
+.frosty {
+  background:rgba(0,0,0, 0.5);
+}
+
+.frosty h1 {
+  font-family: $navbarfont;
+  color:#FF6600;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: $navbarfont;
+  color:white;
+  font-weight: 200;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.btn {
+  border-radius:0;
+}
+
+body {
+  background: url('bp.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+
+.clr {
+  clear:both;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -8,4 +74,59 @@
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:10px;
+}
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin:10px;
+}
+
+.timing {
+ white-space: nowrap;
+}
+
+.timing * {
+ display: inline;
+}
+
+#start_clock {
+  font-size: 72px;
+}
+
+.center_name {
+  text-align: center;
+  color: #33FFCC;
+  font-size: 350%;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.drill_info {
+  text-align: center;
+  font-size: 150%;
+}
+
+.logo {
+  text-align: center;
+  font-family: $navbarfont;
+  color:#FF6600;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.information {
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
 }
